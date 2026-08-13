@@ -4,7 +4,7 @@
       "time": "11:35",
       "genre": "✈️",
       "location": "まつもと空港発",
-      "desc": "保安検査場通過は20分前まで",
+      "desc": "遅くとも保安検査場通過は20分前まで",
       "map": "https://maps.app.goo.gl/Y8Uj8R1rgs6vAnCn6",
       "hp": "https://www.matsumoto-airport.co.jp/"
     },
@@ -12,7 +12,7 @@
       "time": "13:15",
       "genre": "✈️",
       "location": "新千歳空港着",
-      "desc": "到着ロビーで合流",
+      "desc": "トイレはすましておきましょう",
       "map": "https://maps.app.goo.gl/a5H5nSaMcooVLRUK6",
       "hp": "https://www.hokkaido-airports.com/ja/new-chitose/floormap/"
     },
@@ -20,25 +20,25 @@
       "time": "13:30",
       "genre": "🚙",
       "location": "空港でピックアップ",
-      "desc": "レンタカー送迎バス乗り場へ移動",
-      "map": "",
-      "hp": ""
+      "desc": "(仮)ちか達がレンタカー借りて拾うならAB駐車場",
+      "map": "https://www.hokkaido-airports.com/ja/new-chitose/access/parking/",
+      "hp": "https://www.hokkaido-airports.com/ja/new-chitose/access/car/"
     },
     {
       "time": "14:30",
       "genre": "🚩",
       "location": "ウポポイ",
-      "desc": "事前のWEB予約を確認すること",
-      "map": "https://maps.app.goo.gl/xxx",
-      "hp": "https://ainu-upopoy.jp/"
+      "desc": "まだWEB予約してない",
+      "map": "https://maps.app.goo.gl/qfCDwmhWsQxjVitq8",
+      "hp": "https://ainu-upopoy.go.jp/"
     },
     {
       "time": "16:20頃",
       "genre": "🏨",
       "location": "洞爺湖ザレイクスイート",
       "desc": "レイクビューのお部屋",
-      "map": "",
-      "hp": ""
+      "map": "https://maps.app.goo.gl/gkR4uqVbgkJ9UBAD7",
+      "hp": "https://www.konosumika.com/"
     },
     {
       "time": "時間当日",
@@ -46,20 +46,27 @@
       "location": "ホテルビュッフェ",
       "desc": "夕食時間はチェックイン時に確定",
       "map": "",
-      "hp": ""
+      "hp": "https://www.konosumika.com/dining"
     }
   ],
   "1": [
-    { "time": "08:00", "genre": "🍴", "location": "ホテルビュッフェ", "desc": "朝食", "map": "", "hp": "" },
-    { "time": "08:45", "genre": "🚙", "location": "ホテル発", "desc": "小樽方面へ移動", "map": "", "hp": "" },
-    { "time": "11:00", "genre": "🚩", "location": "おたる水族館", "desc": "イルカショーの時間要確認", "map": "", "hp": "" },
+    { "time": "08:00", "genre": "🍴", "location": "ホテルビュッフェ", "desc": "朝食","map": "", "hp": "" },
+    { "time": "08:45", "genre": "🚙", "location": "ホテル発", "desc": "小樽方面へ移動",
+      "map": "https://maps.app.goo.gl/FUbn7PLXYNm3HUoU6", "hp": "" },
+    { "time": "11:00", "genre": "🚩", "location": "おたる水族館", "desc": "まだチケット買ってない",
+      "map": "", "hp": "https://otaru-aq.jp/" },
     { "time": "13:05", "genre": "🚶", "location": "おたる水族館発", "desc": "徒歩で食堂へ移動", "map": "", "hp": "" },
-    { "time": "13:10", "genre": "🍴", "location": "青塚食堂", "desc": "特大にしん焼きが名物", "map": "", "hp": "" },
-    { "time": "14:10", "genre": "🚙", "location": "青塚食堂発", "desc": "小樽市内中心部へ移動", "map": "", "hp": "" },
+    { "time": "13:10", "genre": "🍴", "location": "青塚食堂", "desc": "特大にしん焼きが名物",
+      "map": "https://maps.app.goo.gl/9gLNbLaMffEtjEZX8", "hp": "https://www.aotsuka.com/" },
+    { "time": "14:10", "genre": "🚙", "location": "青塚食堂発", "desc": "小樽堺町通り商店街 駐車場（小樽観光駐車場）へ移動",
+      "map": "https://maps.app.goo.gl/D1ZhoqsEtXQfJuJ49", "hp": "https://otaru.gr.jp/citizen/parking-information" },
     { "time": "14:25", "genre": "🚩", "location": "小樽運河・北一ガラス・ルタオ", "desc": "散策・お買い物", "map": "", "hp": "" },
-    { "time": "16:00", "genre": "🚙", "location": "ルタオ等発", "desc": "ホテルへ移動", "map": "", "hp": "" },
-    { "time": "16:10", "genre": "🏨", "location": "小樽オーセントホテル", "desc": "チェックイン・休憩", "map": "", "hp": "" },
-    { "time": "17:50", "genre": "🚶", "location": "おたる政寿司本店", "desc": "夕食予約済み", "map": "", "hp": "" }
+    { "time": "16:00", "genre": "🚙", "location": "ルタオ等発", "desc": "ホテルへ移動",
+      "map": "https://maps.app.goo.gl/pzuQZfcUKLahU94Q8", "hp": "" },
+    { "time": "16:10", "genre": "🏨", "location": "小樽オーセントホテル", "desc": "チェックイン・休憩",
+      "map": "", "hp": "https://www.authent.co.jp/" },
+    { "time": "17:50", "genre": "🚶", "location": "おたる政寿司本店", "desc": "18時から夕食予約済み", 
+      "map": "https://maps.app.goo.gl/1D4VD3EbR86y7yQS7", "hp": "https://masazushi.co.jp/shop-honten/" }
   ],
   "2": [
     { "time": "08:00", "genre": "🍴", "location": "ホテルビュッフェ", "desc": "朝食", "map": "", "hp": "" },
