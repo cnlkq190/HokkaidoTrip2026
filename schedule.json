@@ -1,0 +1,33 @@
+{
+  "0": [
+    { "time": "11:35", "genre": "✈️", "location": "まつもと空港発", "desc": "フライト準備", "link": "" },
+    { "time": "13:15", "genre": "✈️", "location": "新千歳空港着", "desc": "到着・荷物ピックアップ", "link": "" },
+    { "time": "13:30", "genre": "🚙", "location": "空港でピックアップ", "desc": "レンタカー受取移動", "link": "" },
+    { "time": "14:30", "genre": "🚩", "location": "ウポポイ", "desc": "民族共生象徴空間を観光", "link": "" },
+    { "time": "16:20頃", "genre": "🏨", "location": "洞爺湖ザレイクスイート", "desc": "チェックイン", "link": "" },
+    { "time": "時間当日", "genre": "🍴", "location": "ホテルビュッフェ", "desc": "夕食", "link": "" }
+  ],
+  "1": [
+    { "time": "08:00", "genre": "🍴", "location": "ホテルビュッフェ", "desc": "朝食", "link": "" },
+    { "time": "08:45", "genre": "🚙", "location": "ホテル発", "desc": "小樽方面へ移動", "link": "" },
+    { "time": "11:00", "genre": "🚩", "location": "おたる水族館", "desc": "水族館見学", "link": "" },
+    { "time": "13:05", "genre": "🚶", "location": "おたる水族館発", "desc": "徒歩で食堂へ移動", "link": "" },
+    { "time": "13:10", "genre": "🍴", "location": "青塚食堂", "desc": "昼食", "link": "" },
+    { "time": "14:10", "genre": "🚙", "location": "青塚食堂発", "desc": "小樽市内中心部へ移動", "link": "" },
+    { "time": "14:25", "genre": "🚩", "location": "小樽運河・北一ガラス・ルタオ", "desc": "散策・お買い物・スイーツ", "link": "" },
+    { "time": "16:00", "genre": "🚙", "location": "ルタオ等発", "desc": "ホテルへ移動", "link": "" },
+    { "time": "16:10", "genre": "🏨", "location": "小樽オーセントホテル", "desc": "チェックイン・休憩", "link": "" },
+    { "time": "17:50", "genre": "🚶", "location": "おたる政寿司本店", "desc": "夕食（徒歩移動）", "link": "" }
+  ],
+  "2": [
+    { "time": "08:00", "genre": "🍴", "location": "ホテルビュッフェ", "desc": "朝食", "link": "" },
+    { "time": "08:45", "genre": "🚙", "location": "ホテル発", "desc": "札幌方面へ移動", "link": "" },
+    { "time": "09:45", "genre": "🚩", "location": "札幌羊ヶ丘展望台", "desc": "クラーク像・写真撮影", "link": "" },
+    { "time": "10:15", "genre": "🚙", "location": "札幌羊ヶ丘展望台発", "desc": "六花亭へ移動", "link": "" },
+    { "time": "10:35", "genre": "🚩", "location": "六花亭札幌本店", "desc": "喫茶・お買い物", "link": "" },
+    { "time": "11:30", "genre": "🚙", "location": "六花亭札幌本店発", "desc": "空港へ移動", "link": "" },
+    { "time": "12:30", "genre": "🚩", "location": "新千歳空港", "desc": "ご飯・最後のお買い物", "link": "" },
+    { "time": "15:40", "genre": "✈️", "location": "新千歳空港発", "desc": "帰路フライト", "link": "" },
+    { "time": "17:15", "genre": "✈️", "location": "まつもと空港着", "desc": "到着・解散", "link": "" }
+  ]
+}

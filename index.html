@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hokkaido Trip 2026</title>
+  <!-- おしゃれな英文フォントの読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-color: #f7f6f2;          /* やわらかいオフトーンベージュ */
+      --card-bg: #ffffff;
+      --text-main: #333d37;        /* 濃いセージダークグリーン */
+      --text-sub: #7a8b7e;         /* くすみグリーン */
+      --accent-color: #6a7f70;     /* セージグリーン */
+      --accent-light: #e8ebe6;     /* パステルセージ */
+      --border-color: #eae8e1;
+      --pending-bg: #fafaf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 50px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ヘッダーデザイン */
+    header {
+      background-color: var(--bg-color);
+      text-align: center;
+      padding: 35px 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(10px);
+      background-color: rgba(247, 246, 242, 0.9);
+    }
+
+    header .sub-title {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    header h1 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--text-main);
+    }
+
+    /* タブナビゲーション */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 20px;
+      position: sticky;
+      top: 85px;
+      z-index: 99;
+      background-color: rgba(247, 246, 242, 0.95);
+    }
+
+    .tab-btn {
+      flex: 1;
+      max-width: 110px;
+      padding: 8px 0;
+      text-align: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-sub);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .tab-btn span {
+      display: block;
+      font-size: 0.7rem;
+      opacity: 0.8;
+    }
+
+    .tab-btn.active {
+      color: #fff;
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      box-shadow: 0 4px 10px rgba(106, 127, 112, 0.25);
+    }
+
+    /* コンテナ */
+    .schedule-container {
+      max-width: 500px;
+      margin: 10px auto 0;
+      padding: 0 16px;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* カードアイテム */
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 16px 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      border: 1px solid rgba(234, 232, 225, 0.6);
+      transition: transform 0.2s ease;
+    }
+
+    .timeline-item.pending {
+      background: var(--pending-bg);
+      border: 1px dashed #d1cfc7;
+      box-shadow: none;
+    }
+
+    .time-box {
+      min-width: 72px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: var(--accent-color);
+      font-size: 0.85rem;
+      padding-right: 10px;
+      margin-right: 12px;
+      border-right: 1px solid var(--accent-light);
+      letter-spacing: 0.5px;
+    }
+
+    .info-box {
+      flex: 1;
+    }
+
+    .location-name {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-main);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      letter-spacing: 0.2px;
+    }
+
+    .genre-icon {
+      margin-right: 6px;
+      font-size: 0.95rem;
+    }
+
+    .link-icon {
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-left: 8px;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .link-icon:hover {
+      opacity: 1;
+    }
+
+    .description {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+      margin-top: 3px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="sub-title">Travel Schedule</div>
+    <h1>Hokkaido 🌿 2026</h1>
+  </header>
+
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="switchTab(0)">Day 1<span>9/20 Sat</span></button>
+    <button class="tab-btn" onclick="switchTab(1)">Day 2<span>9/21 Sun</span></button>
+    <button class="tab-btn" onclick="switchTab(2)">Day 3<span>9/22 Mon</span></button>
+  </div>
+
+  <main class="schedule-container">
+    <div id="day0" class="tab-content active"></div>
+    <div id="day1" class="tab-content"></div>
+    <div id="day2" class="tab-content"></div>
+  </main>
+
+  <script>
+    // ローカルで開いた場合の予備データ（CORSエラー対策）
+    const fallbackData = {
+      0: [
+        { time: "11:35", genre: "✈️", location: "まつもと空港発", desc: "フライト準備", link: "" },
+        { time: "13:15", genre: "✈️", location: "新千歳空港着", desc: "到着・荷物ピックアップ", link: "" },
+        { time: "13:30", genre: "🚙", location: "空港でピックアップ", desc: "レンタカー受取移動", link: "" },
+        { time: "14:30", genre: "🚩", location: "ウポポイ", desc: "民族共生象徴空間を観光", link: "" },
+        { time: "16:20頃", genre: "🏨", location: "洞爺湖ザレイクスイート", desc: "チェックイン", link: "" },
+        { time: "時間当日", genre: "🍴", location: "ホテルビュッフェ", desc: "夕食", link: "" }
+      ],
+      1: [
+        { time: "08:00", genre: "🍴", location: "ホテルビュッフェ", desc: "朝食", link: "" },
+        { time: "08:45", genre: "🚙", location: "ホテル発", desc: "小樽方面へ移動", link: "" },
+        { time: "11:00", genre: "🚩", location: "おたる水族館", desc: "水族館見学", link: "" },
+        { time: "13:05", genre: "🚶", location: "おたる水族館発", desc: "徒歩で食堂へ移動", link: "" },
+        { time: "13:10", genre: "🍴", location: "青塚食堂", desc: "昼食", link: "" },
+        { time: "14:10", genre: "🚙", location: "青塚食堂発", desc: "小樽市内中心部へ移動", link: "" },
+        { time: "14:25", genre: "🚩", location: "小樽運河・北一ガラス・ルタオ", desc: "散策・お買い物・スイーツ", link: "" },
+        { time: "16:00", genre: "🚙", location: "ルタオ等発", desc: "ホテルへ移動", link: "" },
+        { time: "16:10", genre: "🏨", location: "小樽オーセントホテル", desc: "チェックイン・休憩", link: "" },
+        { time: "17:50", genre: "🚶", location: "おたる政寿司本店", desc: "夕食（徒歩移動）", link: "" }
+      ],
+      2: [
+        { time: "08:00", genre: "🍴", location: "ホテルビュッフェ", desc: "朝食", link: "" },
+        { time: "08:45", genre: "🚙", location: "ホテル発", desc: "札幌方面へ移動", link: "" },
+        { time: "09:45", genre: "🚩", location: "札幌羊ヶ丘展望台", desc: "クラーク像・写真撮影", link: "" },
+        { time: "10:15", genre: "🚙", location: "札幌羊ヶ丘展望台発", desc: "六花亭へ移動", link: "" },
+        { time: "10:35", genre: "🚩", location: "六花亭札幌本店", desc: "喫茶・お買い物", link: "" },
+        { time: "11:30", genre: "🚙", location: "六花亭札幌本店発", desc: "空港へ移動", link: "" },
+        { time: "12:30", genre: "🚩", location: "新千歳空港", desc: "ご飯・最後のお買い物", link: "" },
+        { time: "15:40", genre: "✈️", location: "新千歳空港発", desc: "帰路フライト", link: "" },
+        { time: "17:15", genre: "✈️", location: "まつもと空港着", desc: "到着・解散", link: "" }
+      ]
+    };
+
+    // データの読み込み処理
+    fetch('./schedule.json')
+      .then(response => {
+        if (!response.ok) throw new Error('ネットワークエラー');
+        return response.json();
+      })
+      .then(scheduleData => {
+        renderSchedule(scheduleData);
+      })
+      .catch(error => {
+        console.log('ローカル表示のため予備データを使用します');
+        renderSchedule(fallbackData);
+      });
+
+    function renderSchedule(scheduleData) {
+      Object.keys(scheduleData).forEach(dayIndex => {
+        const container = document.getElementById(`day${dayIndex}`);
+        const items = scheduleData[dayIndex];
+        
+        let html = '';
+        items.forEach(item => {
+          const isPending = item.isPending ? 'pending' : '';
+          const linkHtml = item.link ? `<a href="${item.link}" target="_blank" rel="noopener" class="link-icon">🔗</a>` : '';
+          
+          html += `
+            <div class="timeline-item ${isPending}">
+              <div class="time-box">${item.time}</div>
+              <div class="info-box">
+                <div class="location-name">
+                  <span><span class="genre-icon">${item.genre || ''}</span>${item.location}</span>
+                  ${linkHtml}
+                </div>
+                <div class="description">${item.desc || ''}</div>
+              </div>
+            </div>
+          `;
+        });
+        container.innerHTML = html;
+      });
+    }
+
+    function switchTab(index) {
+      const buttons = document.querySelectorAll('.tab-btn');
+      const contents = document.querySelectorAll('.tab-content');
+
+      buttons.forEach((btn, idx) => {
+        btn.classList.toggle('active', idx === index);
+      });
+
+      contents.forEach((content, idx) => {
+        content.classList.toggle('active', idx === index);
+      });
+    }
+  </script>
+</body>
+</html>
