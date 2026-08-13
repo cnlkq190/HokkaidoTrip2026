@@ -81,8 +81,8 @@
     { "time": "11:30", "genre": "🚙", "location": "六花亭札幌本店発", "desc": "空港へ移動", 
       "map": "https://maps.app.goo.gl/a5H5nSaMcooVLRUK6", "hp": "" },
     { "time": "12:30", "genre": "🚩", "location": "新千歳空港", "desc": "ご飯・最後のお買い物", 
-      "map": "https://maps.app.goo.gl/a5H5nSaMcooVLRUK6", "hp": "https://www.hokkaido-airports.com/ja/new-chitose/floormap/" },
+      "map": "https://maps.app.goo.gl/a5H5nSaMcooVLRUK6", "hp": "https://cocoiitoco.com/odekake/newchitose_airport_omiyage/" },
     { "time": "15:40", "genre": "✈️", "location": "新千歳空港発", "desc": "帰路フライト", "map": "", "hp": "" },
-    { "time": "17:15", "genre": "✈️", "location": "まつもと空港着", "desc": "到着・解散", "map": "", "hp": "" }
+    { "time": "17:15", "genre": "✈️", "location": "まつもと空港着", "desc": "おうちに帰るまでが旅行です、気をつけて帰りましょう", "map": "", "hp": "" }
   ]
 }
