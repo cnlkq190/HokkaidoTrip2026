@@ -4,7 +4,8 @@
       "time": "11:35", "genre": "✈️", "location": "まつもと空港発",
       "desc": "遅くとも保安検査場通過は20分前まで",
       "map": "https://maps.app.goo.gl/Y8Uj8R1rgs6vAnCn6",
-      "hp": "https://www.matsumoto-airport.co.jp/"
+      "hp": "https://www.matsumoto-airport.co.jp/",
+      "ticket": ""
     },
     {
       "time": "13:15",
@@ -12,7 +13,8 @@
       "location": "新千歳空港着",
       "desc": "トイレはすましておきましょう",
       "map": "https://maps.app.goo.gl/a5H5nSaMcooVLRUK6",
-      "hp": "https://www.hokkaido-airports.com/ja/new-chitose/floormap/"
+      "hp": "https://www.hokkaido-airports.com/ja/new-chitose/floormap/",
+      "ticket": ""
     },
     {
       "time": "13:30",
@@ -26,9 +28,10 @@
       "time": "14:30",
       "genre": "🚩",
       "location": "ウポポイ",
-      "desc": "まだWEB予約してない",
+      "desc": "アイヌの文化に触れましょう",
       "map": "https://maps.app.goo.gl/qfCDwmhWsQxjVitq8",
-      "hp": "https://ainu-upopoy.go.jp/"
+      "hp": "https://ainu-upopoy.go.jp/",
+      "ticket": "https://drive.google.com/file/d/1WVtc9pdTzjmXzodNigYPbuIOlDchSzdv/view?usp=drive_link"
     },
     {
       "time": "16:20頃",
@@ -51,8 +54,8 @@
     { "time": "08:00", "genre": "🍴", "location": "ホテルビュッフェ", "desc": "朝食","map": "", "hp": "" },
     { "time": "08:45", "genre": "🚙", "location": "ホテル発", "desc": "小樽方面へ移動",
       "map": "https://maps.app.goo.gl/FUbn7PLXYNm3HUoU6", "hp": "" },
-    { "time": "11:00", "genre": "🚩", "location": "おたる水族館", "desc": "まだチケット買ってない",
-      "map": "", "hp": "https://otaru-aq.jp/" },
+    { "time": "11:00", "genre": "🚩", "location": "おたる水族館", "desc": "チケット当時購入（リロで割引）",
+      "map": "", "hp": "https://otaru-aq.jp/", "ticket": "" },
     { "time": "13:05", "genre": "🚶", "location": "おたる水族館発", "desc": "徒歩で食堂へ移動", "map": "", "hp": "" },
     { "time": "13:10", "genre": "🍴", "location": "青塚食堂", "desc": "特大にしん焼きが名物",
       "map": "https://maps.app.goo.gl/9gLNbLaMffEtjEZX8", "hp": "https://www.aotsuka.com/" },
@@ -73,7 +76,7 @@
     { "time": "08:45", "genre": "🚙", "location": "ホテル発", "desc": "札幌羊ヶ丘展望台へ移動",
       "map": "https://maps.app.goo.gl/9P9JkC63CG5Rjnnv6", "hp": "https://www.hitsujigaoka.jp/access/" },
     { "time": "09:45", "genre": "🚩", "location": "札幌羊ヶ丘展望台", "desc": "クラーク像前で写真撮影",
-      "map": "https://maps.app.goo.gl/9P9JkC63CG5Rjnnv6", "hp": "https://www.hitsujigaoka.jp/" },
+      "map": "https://maps.app.goo.gl/9P9JkC63CG5Rjnnv6", "hp": "https://www.hitsujigaoka.jp/", "ticket": "https://ticket-guest.asoview.com/twist/select/160190LU5933?utm_medium=email&utm_source=step_mail&utm_campaign=t-booking-purchase" },
     { "time": "10:15", "genre": "🚙", "location": "札幌羊ヶ丘展望台発", "desc": "タイムズステーション札幌駅前へ移動",
       "map": "https://maps.app.goo.gl/GSZdu1rwLY9hhUANA", "hp": "" },
     { "time": "10:35", "genre": "🚩", "location": "六花亭札幌本店 喫茶室", "desc": "バターサンドアイスを食べる", 
@@ -82,7 +85,7 @@
       "map": "https://maps.app.goo.gl/a5H5nSaMcooVLRUK6", "hp": "" },
     { "time": "12:30", "genre": "🚩", "location": "新千歳空港", "desc": "ご飯・最後のお買い物", 
       "map": "https://maps.app.goo.gl/a5H5nSaMcooVLRUK6", "hp": "https://cocoiitoco.com/odekake/newchitose_airport_omiyage/" },
-    { "time": "15:40", "genre": "✈️", "location": "新千歳空港発", "desc": "帰路フライト", "map": "", "hp": "" },
+    { "time": "15:40", "genre": "✈️", "location": "新千歳空港発", "desc": "帰路フライト", "map": "", "hp": "", "ticket": "" },
     { "time": "17:15", "genre": "✈️", "location": "まつもと空港着", "desc": "おうちに帰るまでが旅行です、気をつけて帰りましょう", "map": "", "hp": "" }
   ]
 }
