@@ -150,6 +150,8 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 4px;
+      flex-wrap: wrap; /* ボタンが増えても折り返せるように */
+      gap: 4px;
     }
 
     .location-name {
@@ -168,7 +170,7 @@
     .button-group {
       display: flex;
       gap: 6px;
-      margin-left: 8px;
+      flex-wrap: wrap;
     }
 
     .link-btn {
@@ -232,13 +234,17 @@
         let html = '';
         items.forEach(item => {
           let buttonsHtml = '';
-          if (item.map || item.hp) {
+          // map, hp, ticket のいずれかがある場合にボタンを生成
+          if (item.map || item.hp || item.ticket) {
             buttonsHtml += '<div class="button-group">';
             if (item.map) {
               buttonsHtml += `<a href="${item.map}" target="_blank" rel="noopener" class="link-btn">地図</a>`;
             }
             if (item.hp) {
               buttonsHtml += `<a href="${item.hp}" target="_blank" rel="noopener" class="link-btn">HP</a>`;
+            }
+            if (item.ticket) {
+              buttonsHtml += `<a href="${item.ticket}" target="_blank" rel="noopener" class="link-btn">チケット</a>`;
             }
             buttonsHtml += '</div>';
           }
